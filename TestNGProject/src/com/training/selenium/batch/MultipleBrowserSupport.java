@@ -6,8 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
-import org.testng.annotations.Test;
+//import org.testng.annotations.Parameters;
+//import org.testng.annotations.Test;
 
 public class MultipleBrowserSupport {
 	
