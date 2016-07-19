@@ -1,0 +1,40 @@
+package com.july.selenium.batch;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirstSeleniumTest {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new FirefoxDriver();
+//		driver.get("http://www.google.com");
+//		Thread.sleep(2000);
+//		System.out.println(driver.getClass());
+//		System.out.println(driver.getTitle());
+//		driver.manage().window().maximize();
+//		driver.findElement(By.id("lst-ib")).clear();
+//		driver.findElement(By.id("lst-ib")).sendKeys("Seleniumhq");
+//		driver.findElement(By.name("btnG")).click();
+//		Thread.sleep(5000);
+		
+		
+		driver.get("file:///D:/Selenium_July2016/FourthDayFirstTestCase.html");
+	      System.out.println(driver.getTitle());
+	    System.out.println(driver.findElements(By.xpath("/html/body/table/tbody/tr")).size());
+	    System.out.println(driver.findElements(By.xpath("//tbody/tr")).size());
+	    List<WebElement> actiontypes = driver.findElements(By.xpath("//tbody/tr"));
+	   for (WebElement actiontype : actiontypes) {
+		int i=1;
+		   //System.out.println(actiontype.getText());
+		   System.out.println(actiontype.findElement(By.xpath("./td["+i+"]")).getText());
+	}
+		//driver.close();
+		driver.quit();
+	}
+
+}

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://www.google.co.in/" />
+<title>CSVReader</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">CSVReader</td></tr>
+</thead><tbody>
+<tr>
+	<td>store</td>
+	<td>4</td>
+	<td>row</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>username</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>2</td>
+	<td>password</td>
+</tr>
+<tr>
+	<td>store</td>
+	<td>1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>while</td>
+	<td>${i}&lt;=${row}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>readCSV</td>
+	<td>file:\D:/Selenium_July2016/testCSV.csv</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>user</td>
+	<td>${i},${username}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${user}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeCellValue</td>
+	<td>pass</td>
+	<td>${i},${password}</td>
+</tr>
+<tr>
+	<td>echo</td>
+	<td>${pass}</td>
+	<td></td>
+</tr>
+<tr>
+	<td>storeEval</td>
+	<td>${i}+1</td>
+	<td>i</td>
+</tr>
+<tr>
+	<td>endWhile</td>
+	<td></td>
+	<td></td>
+</tr>
+</tbody></table>
+</body>
+</html>

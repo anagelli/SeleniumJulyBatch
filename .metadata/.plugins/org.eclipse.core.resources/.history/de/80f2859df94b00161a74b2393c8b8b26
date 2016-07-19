@@ -1,0 +1,27 @@
+package com.july.selenium.batch;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+public class SelectionboxAndCheckbox {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://passportindia.gov.in/AppOnlineProject/user/RegistrationBaseAction");
+		Select ppoffice = new Select(driver.findElement(By.id("dcdrLocation")));
+		List<WebElement>ppoffices = ppoffice.getOptions();
+		System.out.println(ppoffices.size());
+		for (WebElement ppoffice : ppoffices) {
+			
+			System.out.println(ppoffice.getText());
+		}
+		driver.manage().window().maximize();
+		
+		driver.quit();
+	}
+
+}

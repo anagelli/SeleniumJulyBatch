@@ -1,0 +1,17 @@
+package com.july.selenium.batch;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirstSeleniumTest {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new FirefoxDriver();
+		driver.get("www.google.com");
+		Thread.sleep(10000);
+		System.out.println(driver.getTitle());
+		driver.quit();
+	}
+
+}

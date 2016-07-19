@@ -1,0 +1,24 @@
+package com.july.selenium.batch;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirstSeleniumTest {
+
+	public static void main(String[] args) throws InterruptedException {
+
+		WebDriver driver = new FirefoxDriver();
+		driver.get("http://www.google.com");
+		System.out.println(driver.getClass());
+		System.out.println(driver.getTitle());
+		driver.manage().window().maximize();
+		driver.findElement(By.id("lst-ib")).clear();
+		driver.findElement(By.id("lst-ib")).sendKeys("Seleniumhq");
+		driver.findElement(By.name("btnK")).click();
+		Thread.sleep(5000);
+		//driver.close();
+		driver.quit();
+	}
+
+}

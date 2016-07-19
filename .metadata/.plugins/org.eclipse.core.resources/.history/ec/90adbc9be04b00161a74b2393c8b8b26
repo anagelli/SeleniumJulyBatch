@@ -1,0 +1,167 @@
+package com.july.selenium.batch;
+
+public class TableTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+
+
+
+
+
+7:32 AM
+
+Me
+
+let us wait for others
+
+
+
+
+7:32 AM
+
+Sanjay
+
+ok
+
+
+
+
+7:33 AM
+
+Me
+
+hi
+
+
+
+
+7:33 AM
+
+Me
+
+it seems all are there
+
+
+
+
+7:34 AM
+
+Me
+
+let us start
+
+
+
+
+7:34 AM
+
+Raja
+
+Hi
+
+
+
+
+7:34 AM
+
+Raja
+
+I joined call 
+
+
+
+
+7:51 AM
+
+Raja
+
+Ramesh
+
+
+
+
+9:22 AM
+
+Me
+
+sanjay
+
+
+
+
+10:57 AM
+
+ramesh to Organizer(s)
+
+Can you make me the presenter?
+Reply in private
+
+
+
+10:57 AM
+
+Me
+
+ok
+
+
+
+
+10:57 AM
+
+ramesh to Organizer(s)
+
+Can you make me the presenter?
+Reply in private
+
+
+
+10:59 AM
+
+Sanjay
+
+    System.out.println(driver.findElements(By.xpath("/html/body/table/tbody/tr")).size());
+    System.out.println(driver.findElements(By.xpath("//tbody/tr")).size());
+    List<WebElement>   actiontypes = driver.findElements(By.xpath("//tbody/tr"));
+
+
+
+
+11:01 AM
+
+Sanjay
+
+package com.webdriver.training;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class FirstSeleniumTest {
+
+ public static void main(String[] args) throws InterruptedException {
+
+      WebDriver driver = new FirefoxDriver();
+      
+      
+    
+    driver.quit();
+ 
+ 
+      
+      
+      
+           
+ }
+
+}
