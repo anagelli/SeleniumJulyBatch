@@ -1,0 +1,30 @@
+package com.training.selenium.batch;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.Test;
+
+public class CrossBrowserTesting {
+	WebDriver driver;
+	@Test
+	public void checkYahooLoginOnBrowser(String runonbrowser){
+		if (runonbrowser.equalsIgnoreCase("firefox")){
+			driver = new FirefoxDriver();
+		}
+		else if(runonbrowser.equalsIgnoreCase("chrome")){
+			driver = new ChromeDriver();
+		}
+		
+		else if(runonbrowser.equalsIgnoreCase("ie")){
+			driver = new InternetExplorerDriver();
+		}
+		
+		driver.get("http://www.mail.google.com");
+		System.out.println(driver.getTitle());
+		driver.quit();
+	}
+	
+
+}

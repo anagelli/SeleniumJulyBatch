@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="63913" started-at="2016-07-19T08:32:44Z" finished-at="2016-07-19T08:33:48Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="63913" started-at="2016-07-19T08:32:44Z" finished-at="2016-07-19T08:33:48Z">
+      <class name="com.training.selenium.batch.MultipleBrowserSupport">
+        <test-method status="PASS" signature="verifypassportoffices()[pri:0, instance:com.training.selenium.batch.MultipleBrowserSupport@548a9f61]" name="verifypassportoffices" duration-ms="63844" started-at="2016-07-19T14:02:44Z" finished-at="2016-07-19T14:03:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifypassportoffices -->
+      </class> <!-- com.training.selenium.batch.MultipleBrowserSupport -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
